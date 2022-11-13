@@ -1,26 +1,125 @@
-html,
-body {
-  padding: 0;
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+  padding: 0;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+body{
+  background-color: rgb(250, 250, 250);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  padding: 0 100px;
+}
+
+.noticias{
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.postagem{
+  padding: 10px;
+  display: flex;
+}
+
+.postagem-categoria{
+  font-size: 15px;
+  font-weight: bold;
+}
+.postagem h2 a{
+  color:blue;
+  text-decoration: none;
+}
+
+.postagem h2 a:hover{
+  color: darkblue;
+}
+
+.postagem-img{
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  padding-right: 10px;
+}
+
+.postagem-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.postagem-texto{
+  display: inline-block;
+  color: rgb(50, 50, 50);
+}
+
+.postagem-data{
+  margin: 5px 20px;
+  font-size: 13px;
+  color: black;
+  display: list-item;
+}
+
+.container-right{
+  display: block;
+  margin: 0px 100px 0px 0px;
+  width: 30%;
+  padding: 10px;
+  float: right;
+  
+}
+
+.container-right ul{
+  list-style: none;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.container-right li{
+  padding: 10px;
+}
+.container-right .img{
+  text-align: center;
+  border-top: 5px rgb(250, 250, 250) solid;
+  
+}
+
+.right-title{
+  color: darkblue;
+}
+
+footer{
+  font-weight: bold;
+  bottom: 0;
+  color: maroon;
+  text-align: left;
+  padding: 10px;
+  margin: 20px;
+  color: darkblue;
+  border-radius: 1px;
+  text-align: center;
+}
+@media screen and (max-width: 700px){
+  .noticias{
+      display: block;
   }
-  body {
-    color: white;
-    background: black;
+  .container-right{
+      padding: 10px;
+      margin: 10px;
+      width: auto;
+  }
+  .noticias{
+      width: auto;
+  }
+  .container{
+      padding: 1px;
+  }
+  footer{
+      position: relative;
+  }
+  .postagem-img{
+      width: 70%;
   }
 }

@@ -1,0 +1,48 @@
+
+nav ul{
+    display: inline-block;
+    background-color: darkblue;
+    width: 100%;
+    height: 50px;
+}
+
+nav img{
+    width: auto;
+    max-height: 100%;
+    margin-left: 100px;
+}
+.nav-item{
+    display: block;
+    color: white;
+    padding: 16px 14px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-item:hover{
+    color: darkgray;
+}
+
+nav ul li{
+    display: inline;
+    float: right;
+}
+@media screen and (max-width: 700px){
+    nav ul li{ 
+        display: none;
+    }
+    nav ul{
+        text-align: center;
+        height: 10%;
+        display: inline;
+        position: fixed;
+        top: 0;
+    }
+    nav{
+        margin-bottom: 5em;
+    }
+    nav img{
+        margin:0;
+    }
+}
